@@ -8,7 +8,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       "/api": {
-        target: "http://localhost:5000",
+        target: "learning-app-4z4c-4ggnjyqk8-syedshehmeer.vercel.app",
         changeOrigin: true,
       },
     },
