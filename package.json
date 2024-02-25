@@ -6,9 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node backend/server.js",
-    "server": "nodemon backend/server.js",
-    "client": "npm run dev --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "server": "nodemon backend/server.js"
   },
   "keywords": [],
   "author": "",
@@ -24,7 +22,6 @@
     "express-async-handler": "^1.2.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^7.6.1",
-    "react-player": "^2.14.1",
     "redux-persist": "^6.0.0",
     "stripe": "^14.17.0"
   },
