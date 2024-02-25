@@ -108,8 +108,8 @@ const checkout = asyncHandler(async (req, res) => {
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       mode: "payment",
-      success_url: "http://localhost:3000/checkout-success",
-      cancel_url: "http://localhost:3000/payment",
+      success_url: "https://learning-app-blond.vercel.app/checkout-success",
+      cancel_url: "https://learning-app-blond.vercel.app/payment",
       customer_email: user.email,
       client_reference_id: user._id,
       line_items: [
