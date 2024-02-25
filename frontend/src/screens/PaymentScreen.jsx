@@ -26,7 +26,7 @@ const PaymentScreen = () => {
       "Content-Type": "application/json",
     };
     const response = await fetch(
-      "https://learning-app-blond.vercel.app/api/users/create-checkout-session",
+      "https://learning-app-backend.vercel.app/api/users/create-checkout-session",
       {
         method: "POST",
         headers: headers,
