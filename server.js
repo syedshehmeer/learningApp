@@ -17,7 +17,15 @@ const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+const corsOptions = {
+  origin: "https://learning-app-blond.vercel.app/", // Replace with your allowed origin
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  preflightContinue: false,
+  optionsSuccessStatus: 204,
+};
+
+// Use CORS middleware with options
+app.use(cors(corsOptions));
 
 app.use(cookieParser());
 
