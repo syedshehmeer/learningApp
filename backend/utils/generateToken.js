@@ -7,9 +7,9 @@ const generateToken = (res, userId) => {
   res.cookie("jwt", token, {
     httpOnly: true,
     secure: true,
-    sameSite: "strict",
+    sameSite: "lax",
     maxAge: 30 * 24 * 60 * 60 * 1000,
-    domain: "https://learning-app-backend.vercel.app/",
+    domain: "learning-app-backend.vercel.app",
   });
   console.log("in generate token");
 };
