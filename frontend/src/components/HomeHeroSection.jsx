@@ -44,7 +44,7 @@ const HomeHeroSection = () => {
           </div>
           <div className="w-[40%] my-10 flex flex-col justify-center  items-end ">
             <img
-              src="src/assets/davegray.jpg"
+              src="./src/assets/davegray.jpg"
               className=" rounded-full w-80 object-contain"
               alt=""
             />
